@@ -9,9 +9,10 @@ const contentLink = {
         <span class="span-blue">leonardodreyer99@gmail.com<span></h3>
         <p>Olá, me chamo Leonardo!<br>
         Sou organizado, detalhista, preocupado em produzir trabalhos de qualidade e frequentemente não meço esforços para que o resultado seja o melhor possível. 
-        Busco a perfeição.<br>
-        Atualmente faço parte da sexta edição do programa Starter Full Stack Web Developer, oferecido pela Growdev. 
-        Estou em busca de conhecimento e oportunidades para iniciar minha carreira profissional.</p>
+        Busco a perfeição.<br> 
+        Atualmente trabalho como assistênte técnico na manutenção de celulares e atendimento aos clientes.<br> 
+        Participo da sexta edição do programa Starter Full Stack Web Developer, oferecido pela Growdev, 
+        estou em busca de conhecimento e oportunidades para iniciar minha carreira profissional como desenvolvedor.</p>
     `,
     socialMedias:`
         <nav>
@@ -20,9 +21,22 @@ const contentLink = {
             <a href="https://www.instagram.com/leodreyer_/" target="_Blank"><i class="fab fa-instagram-square icons-social-media"></i></a>
         </nav>
     `,
-    knowledge: ['HTML', 'CSS', 'JavaScript', 'Python', 'C++'],
+    knowledge: `
+        <h4 class="title-blue">Conhecimento básico:</h4>
+        <ul>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+        </ul>
+        <h4 class="title-blue">Já tive contato:</h4>
+        <ul>
+            <li>Python</li>
+            <li>C++</li>
+        </ul>
+        `,
     objectives: `
-        <h4>Objetivo pessoal:</h4>
+        <h4 class="title-blue">Objetivo pessoal:</h4>
         <p>Alcançar minha independência financeira, realizar viagens e alguns desejos pessoais!</p>
         <h4 id="objetivo-prof">Objetivo profissional:</h4>
         <p>Tenho como objetivo, para 2022, iniciar minha carreira como desenvolvedor.
@@ -30,9 +44,9 @@ const contentLink = {
         almejando o crescimento tanto profissional como pessoal.</p>
     `,
     comment: `
-        <label>Nome:</label>
+        <label class="title-blue">Nome:</label>
         <input type="text" id="name-comment" placeholder="Mínimo 3 caracteres">
-        <label>Comentário:</label>
+        <label class="title-blue">Comentário:</label>
         <textarea id="area-comment"></textarea>
         <div class="div-button"><input type="button" id="button-contact" value="Entre em contato"><input type="submit" id="save-comment"></div>
         <div class="status"></div>
@@ -41,11 +55,11 @@ const contentLink = {
     `,
     contact: `
         <div id="div-contact">
-            <label>Nome:</label>
+            <label class="title-blue">Nome:</label>
             <input type="text" id="name-contact" placeholder="Mínimo 3 caracteres">
-            <label>Telefone:</label>
+            <label class="title-blue">Telefone:</label>
             <input type="tel" id="phone-contact" placeholder="(xx) x xxxx-xxxx">
-            <label>Email:</label>
+            <label class="title-blue">Email:</label>
             <input type="text" id="email-contact">
             <div class="div-button""><input id="save-contact" type="submit"></div>
             <div class="status-error"></div>
@@ -64,7 +78,7 @@ function loadContent() {
     
     document.getElementById('knowledge').addEventListener('click', function(event) {
         event.preventDefault();
-        contentPage.innerHTML = `<h4>Conhecimentos:</h4>${contentLink.knowledge.join(', ')}.`;   
+        contentPage.innerHTML = contentLink.knowledge;   
     });
     
     document.getElementById('objectives').addEventListener('click', function(event) {
@@ -120,7 +134,7 @@ function loadContent() {
                     emailContact.classList.add('error');
                 } else {
                     statusError.innerHTML = '';
-                    statusSuccess.innerHTML = 'Enviado com sucesso!';
+                    statusSuccess.innerHTML = 'Enviado com sucesso! Assim que possível entrarei em contato.';
                     nameContact.classList.remove('error');
                     phoneContact.classList.remove('error');
                     emailContact.classList.remove('error');
