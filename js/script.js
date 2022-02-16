@@ -58,7 +58,7 @@ const contentLink = {
             <label class="title-blue">Nome:</label>
             <input type="text" id="name-contact" placeholder="Mínimo 3 caracteres">
             <label class="title-blue">Telefone:</label>
-            <input type="tel" id="phone-contact" placeholder="(xx) x xxxx-xxxx">
+            <input type="number" id="phone-contact">
             <label class="title-blue">Email:</label>
             <input type="text" id="email-contact">
             <div class="div-button""><input id="save-contact" type="submit"></div>
