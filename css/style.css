@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+}
+
+#div-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(0, 120, 233);
+}
+
+.card {
+    border: none;
+    background-color: rgb(0, 120, 233);
+    align-items: center;  
+    text-align: center;     
+}
+
+#my-picture{
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    border: solid rgb(22, 22, 22);
+}
+
+#my-menu {
+    text-transform: uppercase;
+}
+
+#my-menu ul{
+    padding: 0;
+}
+
+#my-menu li{
+    list-style-type: none;
+}
+
+#my-menu a {
+    color: rgb(22, 22, 22);
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 120%;
+    font-weight: 500;
+}
+
+#my-menu a:hover {
+    font-size: 125%;
+}
+
+#div-content {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    font-size: 20px;   
+}   
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+}
+
+#content p {
+    text-align: justify;
+}
+
+.font-oswald400 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;   
+    font-size: 50px;
+}
+
+.font-oswald200 {
+    font-family: 'Oswald', sans-serif;  
+    font-weight: 200;
+}
+
+.span-blue {
+    color: rgb(0, 120, 233);
+}
+
+#objetivo-prof {
+    margin-top: 50px;
+}
+
+.icons-social-media {
+    font-size: 28px;
+    color: rgb(0, 120, 233);    
+}
+
+.icons-social-media:hover {
+    font-size: 30px;
+}
+
+#name-comment {
+    font-size: small;
+    width: 50%;
+    border-radius: 3px;
+}
+
+#area-comment {
+    height: 100px;
+    font-size: small;
+}
+
+.div-button {
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    font-size: small;
+}
+
+.div-button input{
+    color: white;
+    border: 0;
+    background-color: rgb(39, 39, 39);
+    border-radius: 3px;
+    padding: 7px 10px;
+    margin: 10px;
+}
+
+#div-contact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#div-contact input{
+    font-size: small;
+    border-radius: 3px;
+}
+
+.error {
+    border-color: red;
+}
+
+.status-error {
+    font-size: small;
+    color: red;
+}
+
+.status-success {
+    font-size: small;
+    color: green;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    line-height: 30px;
+    padding-top: 1%;    
+    font-size: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    #div-card {
+        max-height: 600px;
+    }
+
+    #my-picture{
+        max-height: 40%;
+        max-width: 40%;
+    }
+
+    #my-menu {
+        margin-top: 30px;
+    }
+
+    #my-menu a{
+        font-size: 25px;
+    }
+
+    #div-content {
+        min-height: 400px;
+    }
+}
+
