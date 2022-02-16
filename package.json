@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "express": "^4.17.2"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "meu-curriculo",
+  "description": "Projeto desenvolvido para processo seletivo",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leonardo-Dreyer/meu-curriculo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leonardo-Dreyer/meu-curriculo/issues"
+  },
+  "homepage": "https://github.com/Leonardo-Dreyer/meu-curriculo#readme"
 }
